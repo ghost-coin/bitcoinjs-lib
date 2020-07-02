@@ -80,6 +80,25 @@ If you're familiar with how to use browserify, ignore this and carry on, otherwi
 ### Typescript or VSCode users
 Type declarations for Typescript are included in this library. Normal installation should include all the needed type information.
 
+
+## Examples Ghost
+The below examples are implemented as integration tests with Ghost as Example, they should be very easy to understand.
+Otherwise, pull requests are appreciated.
+
+- [Generate a Ghost address](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration_ghost/addresses.spec.ts)
+- [Import a BIP32 testnet xpriv and export to WIF](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration_ghost/bip32.spec.ts)
+- [Export a BIP32 xpriv, then import it](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration_ghost/bip32.spec.ts)
+- [Export a BIP32 xpub](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration_ghostv/bip32.spec.ts)
+- [Create a BIP32, bitcoin, account 0, external address](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration_ghost/bip32.spec.ts)
+- [Create a BIP44, bitcoin, account 0, external address](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration_ghost/bip32.spec.ts)
+- [Create a BIP49, bitcoin testnet, account 0, external address](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration_ghost/bip32.spec.ts)
+- [Use BIP39 to generate BIP32 addresses](https://github.com/bitcoinjs/bitcoinjs-lib/blob/master/test/integration_ghost/bip32.spec.ts)
+
+
+
+If you have a use case that you feel could be listed here, please [ask for it](https://github.com/bitcoinjs/bitcoinjs-lib/issues/new)!
+
+
 ## Examples
 The below examples are implemented as integration tests, they should be very easy to understand.
 Otherwise, pull requests are appreciated.
