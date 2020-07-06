@@ -21,7 +21,7 @@ describe('Ghost Network bitcoinjs-lib (BIP32) ', () => {
     const strng = node.toBase58();
     const restored = bip32.fromBase58(strng, NETWORK);
 
-    assert.strictEqual(getAddress(node, ), getAddress(restored)); // same public key
+    assert.strictEqual(getAddress(node), getAddress(restored)); // same public key
     assert.strictEqual(node.toWIF(), restored.toWIF()); // same private key
   });
 
