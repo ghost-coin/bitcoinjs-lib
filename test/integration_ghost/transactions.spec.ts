@@ -1,11 +1,10 @@
 // import * as assert from 'assert';
 import * as bip32 from 'bip32';
 import * as bip39 from 'bip39';
-import { UnspentTransaction } from '../../types/insight';
 
 import { describe, it } from 'mocha';
 import * as bitcoin from '../..';
-import { testnetUtils } from './_testnet';
+import { testnetUtils, UnspentTransaction } from './_testnet';
 
 
 const NETWORK = bitcoin.networks.ghostTestnet;

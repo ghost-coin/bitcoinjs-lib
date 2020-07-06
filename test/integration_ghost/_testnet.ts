@@ -1,7 +1,19 @@
-import { UnspentTransaction } from '../../types/insight';
+
 const fetch = require('node-fetch');
 
 const APIURL = process.env.APIURL || 'https://testnet.ghostscan.io/ghost-insight-api';
+
+export interface UnspentTransaction {
+    address: string;
+    txid: string;
+    vout: number;
+    scriptPubKey: string;
+    amount: number;
+    satoshis: number;
+    height: number;
+    confirmations: number;
+}
+
 
 export const testnetUtils = {
     async fetchTx(txid: string): Promise<any> {
